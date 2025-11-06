@@ -1,8 +1,5 @@
 #pragma once
 
-#define MATRIX_COL_PINS_RIGHT {B13, B14, B15, A8, A9, C6}
-#define MATRIX_ROW_PINS_RIGHT {B12, B11, B10, B2}
-
 #define MASTER_LEFT
 
 #define SERIAL_USART_FULL_DUPLEX
