@@ -2,11 +2,11 @@
 
 #include_next <mcuconf.h>
 
-// USART settings for split comms
+/* Setup USART for split communication */
 #undef STM32_SERIAL_USE_USART2
 #define STM32_SERIAL_USE_USART2 TRUE
 
-// MCU clock settings
+/* MCU clock settings */
 #undef STM32_HSE_BYPASS
 #undef STM32_HSE_ENABLED
 #undef STM32_SW
@@ -33,3 +33,8 @@
 #define STM32_PPRE STM32_PPRE_DIV1
 #define STM32_USBSEL STM32_USBSEL_PLLQCLK
 #define STM32_USART2SEL STM32_USART2SEL_SYSCLK
+
+/* Setup OLED display communication */
+#undef STM32_SPI_USE_SPI1
+#define STM32_SPI_USE_SPI1 TRUE
+#define SPI_SELECT_MODE SPI_SELECT_MODE_NONE

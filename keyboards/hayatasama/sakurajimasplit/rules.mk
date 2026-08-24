@@ -1,5 +1,5 @@
-# # Enable debug information in the final binaries
-# DEBUG_ENABLE = yes
-# # Disable optimisations for debugging purposes
-# LTO_ENABLE = no
-# OPT = g
+LTO_ENABLE = yes
+
+OLED_ENABLE = yes
+OLED_DRIVER = ssd1306
+OLED_TRANSPORT = spi
